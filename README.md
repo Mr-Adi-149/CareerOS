@@ -64,6 +64,3 @@ The default Next.js preset works without additional configuration, and a `vercel
 - `lib/` — Typed static mock data, context setups, and shared utilities.
 - `.github/workflows/` — CI/CD quality gate for GitHub Actions.
 
-## ⚠️ Assumptions & Limitations
-
-Currently, jobs and applications operate using mock data to demonstrate functionality and UX. Saving jobs persists in your local browser storage. Applying for a job will show a successful feedback state, but intentionally sends no data to a backend. The architecture is ready to integrate with production databases and authentication providers when required.
