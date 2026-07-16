@@ -1,44 +1,69 @@
-# Talentlane
+# CareerOS
 
-A polished, frontend-first job board designed for fast, focused job discovery. It uses static mock data, so no database or environment variables are needed.
+A modern, frontend-first recruitment platform built to streamline the hiring experience for both candidates and recruiters. Designed with a focus on speed, user experience, and scalability. 
 
-## Features
+CareerOS provides a seamless job discovery workflow, role-based user experiences, and a robust component architecture following modern Next.js development practices. It uses static mock data, so no complex database or environment variables are needed to get started.
 
-- Keyword search across role, company, skills, and summary
-- Combined location, work mode, job type, and experience filters with clear-all
-- Newest, relevance, and company-name sorting
-- Responsive role cards, saved-job shortlist (persisted in browser local storage), empty states, skeleton loading, and friendly 404 UI
-- Dedicated job detail routes with role context, requirements, similar roles, and an accessible mock application flow
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC)
+![Vercel](https://img.shields.io/badge/Vercel-Deployed-black)
 
-## Tech stack
+## 🚀 Key Highlights
 
-Next.js App Router, React, TypeScript, Tailwind CSS, and static in-project job data.
+- **Role-Based Access Control:** Distinct workflows and isolated dashboards for `Candidates` and `Recruiters`.
+- **Advanced Job Discovery:** Multi-level filtering, smart sorting, and full-text keyword search.
+- **Frictionless Application Flow:** Built-in interactive modals to apply for jobs without context switching.
+- **Persistent Shortlist:** Save jobs instantly with local storage persistence across sessions.
+- **Recruiter Tools:** Dedicated workspace featuring an integrated Email Composer for applicant communication.
+- **Resilient UI:** Graceful error handling, custom 404 pages, skeleton loaders, and fully responsive layouts.
 
-## Local development
+## 🛠️ Tech Stack
 
-```bash
-npm install
-npm run dev
-```
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** React Context API
+- **Routing:** Next.js Dynamic Routing
+- **Deployment:** Vercel
+- **CI/CD:** GitHub Actions
 
-Open `http://localhost:3000`. Run quality checks with:
+## 📖 Documentation
 
+For an in-depth look into the platform's architecture, feature breakdowns, routing, and UI/UX decisions, please read the full documentation:
+
+👉 **[View Full Product & Feature Documentation](./DOCUMENTATION.md)**
+
+## 💻 Local Development
+
+1. Clone the repository and install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open `http://localhost:3000` in your browser.
+
+Run quality checks with:
 ```bash
 npm run lint
 npm run build
 ```
 
-## Deploying
+## 🌐 Deploying
 
-Push this repository to GitHub and import it into Vercel. The default Next.js preset works without configuration; `vercel.json` is included for clarity. The included GitHub Actions workflow runs lint and production build for pushes and pull requests.
+The repository is configured for easy deployment on **Vercel**. 
+The default Next.js preset works without additional configuration, and a `vercel.json` is included for clarity. A pre-configured GitHub Actions CI/CD pipeline runs linting and production builds automatically for pushes and pull requests.
 
-## Structure
+## 📁 Structure
 
-- `app/` — routes, global styling, loading and error-safe UI
-- `components/` — reusable explorer, cards, application modal, and saved-state provider
-- `lib/` — typed static data and shared job types
-- `.github/workflows/` — CI quality gate
+- `app/` — Next.js App Router routes, global styles, loading states, and error boundaries.
+- `components/` — Reusable UI elements, application modals, and global providers.
+- `lib/` — Typed static mock data, context setups, and shared utilities.
+- `.github/workflows/` — CI/CD quality gate for GitHub Actions.
 
-## Assumptions
+## ⚠️ Assumptions & Limitations
 
-Jobs and applications are demonstrations. Saving persists in the current browser; applying shows success feedback but intentionally sends no data to a backend.
+Currently, jobs and applications operate using mock data to demonstrate functionality and UX. Saving jobs persists in your local browser storage. Applying for a job will show a successful feedback state, but intentionally sends no data to a backend. The architecture is ready to integrate with production databases and authentication providers when required.
