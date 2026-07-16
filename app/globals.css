@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fbfaf7;
+    --foreground: #101c35;
+    --surface: #ffffff;
+    --surface-muted: #f4f1ea;
+    --line: #e8e3d9;
+    --saffron: #e97a13;
+    --navy: #101c35;
+    --green: #237348;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  /* Premium Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #e4e8f0;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c9d3e1;
+  }
+
+  ::selection {
+    background-color: #ffe0a9;
+    color: #451a05;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-outfit), sans-serif;
+  }
+}
+
+/* Legacy recruiter controls are intentionally remapped: green remains reserved for outcomes. */
+.bg-emerald-800, .bg-green-800 { background-color: #101c35 !important; }
+.hover\:bg-emerald-900:hover, .hover\:bg-green-900:hover { background-color: #273347 !important; }
+.text-emerald-700, .text-emerald-800, .text-emerald-950 { color: #c75807 !important; }
+.border-emerald-200, .border-emerald-300 { border-color: #ffc971 !important; }
+.hover\:border-emerald-200:hover, .hover\:border-emerald-300:hover { border-color: #ff900c !important; }
+.bg-emerald-50, .bg-emerald-100, .bg-green-50 { background-color: #fff1d4 !important; }
+.focus\:border-emerald-500:focus { border-color: #e97a13 !important; }
+
+@layer components {
+  .shell {
+    @apply w-full max-w-[1240px] mx-auto px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply text-[0.68rem] font-extrabold tracking-[0.18em] uppercase text-saffron-700;
+  }
+
+  .premium-surface {
+    @apply rounded-2xl border border-stone-200 bg-white shadow-premium;
+  }
+
+  .premium-glass {
+    @apply border border-white/60 bg-white/80 backdrop-blur-xl shadow-glass;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ivory-100;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-saffron-600 px-5 py-3 text-sm font-bold text-white shadow-[0_8px_20px_-8px_rgba(199,88,7,.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-saffron-700 hover:shadow-[0_14px_26px_-10px_rgba(199,88,7,.85)] active:translate-y-0 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-navy-200 bg-white px-5 py-3 text-sm font-bold text-navy-800 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-navy-400 hover:bg-navy-50 active:translate-y-0 active:scale-[0.98];
+  }
+
+  .navy-panel { @apply bg-navy-950 text-white; }
+  .trust-pill { @apply inline-flex items-center gap-1.5 rounded-full border border-navy-200 bg-navy-50 px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[.12em] text-navy-800; }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(105deg,
+        transparent 40%,
+        rgba(255, 255, 255, 0.2) 50%,
+        transparent 60%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  .page-orb { filter: blur(72px); pointer-events: none; }
+
+  .chakra-container { position: relative; }
+  .chakra-glow { position:absolute; inset:12px; border-radius:9999px; background:rgba(233,122,19,.18); filter:blur(14px); }
+  .chakra-ring-outer { position:absolute; height:58px; width:58px; border-radius:9999px; border:2px solid #e97a13; border-left-color:#237348; border-bottom-color:#dce7f6; }
+  .chakra-wheel { position:relative; display:flex; align-items:center; justify-content:center; height:38px; width:38px; border:1.5px solid #334665; border-radius:9999px; }
+  .chakra-spoke { position:absolute; height:17px; width:1px; top:1px; transform-origin:50% 18px; background:#334665; opacity:.8; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+  }
+}

@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound() { return <main className="shell grid min-h-[65vh] place-items-center py-16 text-center"><div><p className="text-sm font-semibold uppercase tracking-[.16em] text-green-800">404</p><h1 className="mt-2 text-3xl font-semibold text-ink">That opportunity has moved on.</h1><p className="mt-3 text-stone-600">The role you’re looking for isn’t available here.</p><Link href="/" className="mt-6 inline-block rounded-xl bg-green-800 px-4 py-2.5 text-sm font-semibold text-white">Browse open roles</Link></div></main>; }
