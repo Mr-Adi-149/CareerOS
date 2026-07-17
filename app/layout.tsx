@@ -19,7 +19,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'CareerOS — Premium Opportunities for India\'s Talent',
+  title: 'Niyukti — Premium Opportunities for India\'s Talent',
   description: 'A trustworthy, India-first hiring platform connecting ambitious candidates with verified opportunities.',
   keywords: 'jobs India, career platform, hiring, recruitment, Indian jobs',
 };

@@ -5,9 +5,9 @@ import { Application, ApplicationStatus, CandidateProfile, Job } from './types';
 import { jobs as initialJobs } from './jobs';
 import { useAuth } from './auth-context';
 
-const PROFILE_KEY = 'careeros-profile-v1';
-const APPLICATIONS_KEY = 'careeros-applications-v1';
-const JOBS_KEY = 'careeros-jobs-v1';
+const PROFILE_KEY = 'niyukti-profile-v1';
+const APPLICATIONS_KEY = 'niyukti-applications-v1';
+const JOBS_KEY = 'niyukti-jobs-v1';
 
 type NewJob = Omit<Job, 'company' | 'recruiterId'>;
 

@@ -28,7 +28,7 @@ export function Header() {
           <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-navy-900 to-navy-950 text-white shadow-premium transition-transform duration-300 group-hover:scale-[1.03]">
             <span className="font-heading text-lg font-black">C</span><span className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-saffron-500 via-white to-indiaGreen-500" />
           </div>
-          <div><p className="font-heading text-lg font-extrabold tracking-tight text-navy-950">CareerOS</p><p className="text-[9px] font-bold uppercase tracking-wider text-stone-400">Private career workspace</p></div>
+          <div><p className="font-heading text-lg font-extrabold tracking-tight text-navy-950">Niyukti</p><p className="text-[9px] font-bold uppercase tracking-wider text-stone-400">Private career workspace</p></div>
         </Link>
 
         <nav aria-label="Primary navigation" className="flex items-center gap-1.5 sm:gap-2">

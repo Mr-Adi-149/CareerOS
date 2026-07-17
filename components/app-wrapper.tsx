@@ -11,7 +11,7 @@ export function AppWrapper({ children }: { children: React.ReactNode }) {
   const isAuthRoute = pathname === '/login' || pathname === '/signup';
 
   if (!hydrated) {
-    return <div className="flex min-h-screen items-center justify-center bg-ivory-100"><BrandLoader label="CareerOS workspace" /></div>;
+    return <div className="flex min-h-screen items-center justify-center bg-ivory-100"><BrandLoader label="Niyukti workspace" /></div>;
   }
 
   if (isAuthRoute || !isAuthenticated) return <>{children}</>;

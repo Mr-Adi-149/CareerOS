@@ -45,13 +45,13 @@ export function AuthForm({ mode }: { mode: 'login' | 'signup' }) {
   return <main className="relative grid min-h-screen overflow-hidden bg-ivory-100 lg:grid-cols-[1.05fr_.95fr]">
     <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-saffron-100/60 page-orb" /><div className="absolute bottom-0 right-[32%] h-80 w-80 rounded-full bg-navy-100/60 page-orb" />
     <section className="relative hidden overflow-hidden bg-navy-950 p-12 lg:flex lg:flex-col lg:justify-between">
-      <div className="relative z-10 flex items-center gap-3 text-white"><span className="grid h-10 w-10 place-items-center rounded-xl bg-white/10 font-heading text-lg font-black">C</span><span className="font-heading text-xl font-extrabold">CareerOS</span></div>
+      <div className="relative z-10 flex items-center gap-3 text-white"><span className="grid h-10 w-10 place-items-center rounded-xl bg-white/10 font-heading text-lg font-black">C</span><span className="font-heading text-xl font-extrabold">Niyukti</span></div>
       <div className="relative z-10 max-w-md"><p className="text-[10px] font-extrabold uppercase tracking-[.22em] text-saffron-300">A better next move</p><h1 className="mt-5 font-heading text-5xl font-extrabold leading-[1.04] tracking-tight text-white">Make ambition feel more certain.</h1><p className="mt-6 text-sm leading-relaxed text-navy-200">A private, composed workspace for purposeful careers and considered hiring decisions.</p></div>
       <div className="relative z-10 flex items-center gap-3 text-xs text-navy-200"><span className="h-2 w-2 rounded-full bg-indiaGreen-400" />Verified teams. Clearer decisions.</div><div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full border border-saffron-400/20" />
     </section>
     <section className="relative z-10 flex items-center justify-center px-5 py-10 sm:px-8">
       <div className="w-full max-w-md rounded-3xl border border-stone-200/60 bg-white/80 p-6 shadow-premium backdrop-blur-md sm:p-9">
-        <Link href="/" className="focus-ring inline-flex items-center gap-2 rounded-lg text-xs font-bold text-navy-800 lg:hidden"><span className="grid h-7 w-7 place-items-center rounded-lg bg-navy-950 text-white">C</span> CareerOS</Link>
+        <Link href="/" className="focus-ring inline-flex items-center gap-2 rounded-lg text-xs font-bold text-navy-800 lg:hidden"><span className="grid h-7 w-7 place-items-center rounded-lg bg-navy-950 text-white">C</span> Niyukti</Link>
         <p className="mt-7 text-[10px] font-extrabold uppercase tracking-[.18em] text-saffron-700">{isSignup ? 'Create your workspace' : 'Welcome back'}</p>
         <h2 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-navy-950">{isSignup ? 'Set your direction.' : 'Good to see you.'}</h2>
         <p className="mt-2 text-sm leading-relaxed text-stone-500">{isSignup ? 'Start with a profile that reflects where you are going.' : 'Sign in to continue your career momentum.'}</p>
@@ -65,7 +65,7 @@ export function AuthForm({ mode }: { mode: 'login' | 'signup' }) {
           {error && <div role="alert" className="rounded-xl border border-red-200 bg-red-50 px-3 py-2.5 text-xs font-semibold text-red-700 animate-pulse">{error}</div>}
           <button disabled={loading} className="btn-primary mt-2 w-full disabled:cursor-wait">{loading ? 'Securing your workspace…' : isSignup ? 'Create account' : 'Sign in securely'}</button>
         </form>
-        <p className="mt-6 text-center text-xs text-stone-500">{isSignup ? 'Already have an account?' : 'New to CareerOS?'} <Link className="font-bold text-saffron-700 hover:text-saffron-800" href={isSignup ? '/login' : '/signup'}>{isSignup ? 'Sign in' : 'Create an account'}</Link></p>
+        <p className="mt-6 text-center text-xs text-stone-500">{isSignup ? 'Already have an account?' : 'New to Niyukti?'} <Link className="font-bold text-saffron-700 hover:text-saffron-800" href={isSignup ? '/login' : '/signup'}>{isSignup ? 'Sign in' : 'Create an account'}</Link></p>
       </div>
     </section>
   </main>;

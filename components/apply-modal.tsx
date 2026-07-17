@@ -125,7 +125,7 @@ export function ApplyModal({ jobId, title, company }: { jobId?: string; title: s
                 <p className="mt-3 text-xs font-medium text-stone-500 bg-stone-50 border border-stone-100 py-2 px-4 rounded-xl inline-block">
                   {emailApplicationMethod === 'direct'
                     ? 'Registered as: Applied directly via Email.'
-                    : 'Registered as: Applied via CareerOS Quick Apply.'}
+                    : 'Registered as: Applied via Niyukti Quick Apply.'}
                 </p>
                 <button
                   onClick={() => setOpen(false)}
@@ -201,7 +201,7 @@ export function ApplyModal({ jobId, title, company }: { jobId?: string; title: s
                       Send Application
                     </button>
                     <p className="text-center text-[11px] font-medium text-stone-400">
-                      Saved privately in your CareerOS workspace.
+                      Saved privately in your Niyukti workspace.
                     </p>
                   </form>
                 )}
@@ -237,7 +237,7 @@ export function ApplyModal({ jobId, title, company }: { jobId?: string; title: s
                     <div className="rounded-2xl border border-dashed border-indiaGreen-200 bg-indiaGreen-50/50 p-5 text-center">
                       <p className="text-sm font-bold text-navy-950">Prefer using our built-in simulator?</p>
                       <p className="mt-2 text-xs font-medium text-stone-600 leading-relaxed">
-                        Draft a mock message right here inside CareerOS to test the tracking flow.
+                        Draft a mock message right here inside Niyukti to test the tracking flow.
                       </p>
                       <button
                         type="button"

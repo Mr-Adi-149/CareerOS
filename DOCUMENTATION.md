@@ -1,8 +1,8 @@
-# CareerOS — Product & Feature Documentation
+# Niyukti — Product & Feature Documentation
 
 ## Overview
 
-**CareerOS** is a modern full-stack inspired recruitment platform designed to streamline the hiring experience for both candidates and recruiters. The application focuses on providing an intuitive job discovery workflow, role-based user experiences, secure route protection, and a scalable component architecture following modern Next.js development practices.
+**Niyukti** is a modern full-stack inspired recruitment platform designed to streamline the hiring experience for both candidates and recruiters. The application focuses on providing an intuitive job discovery workflow, role-based user experiences, secure route protection, and a scalable component architecture following modern Next.js development practices.
 
 The project is built with **Next.js (App Router), TypeScript, Tailwind CSS, React Context API**, and follows a modular, component-driven architecture that is easy to extend into a production-grade ATS (Applicant Tracking System).
 
@@ -29,7 +29,7 @@ The project is built with **Next.js (App Router), TypeScript, Tailwind CSS, Reac
 
 ## 1. Platform Architecture
 
-CareerOS follows a scalable feature-based architecture instead of a page-centric implementation.
+Niyukti follows a scalable feature-based architecture instead of a page-centric implementation.
 
 The application separates:
 
@@ -55,7 +55,7 @@ This modular design allows individual features to evolve independently while kee
 
 ## 2. Authentication & Authorization
 
-CareerOS implements a simulated authentication system designed to mirror production authentication workflows.
+Niyukti implements a simulated authentication system designed to mirror production authentication workflows.
 
 Although backend authentication is mocked for demonstration purposes, the architecture is built to be easily replaceable with Firebase, Clerk, Auth.js, Supabase, or JWT-based authentication.
 
@@ -172,7 +172,7 @@ The component has been architected so it can later integrate with SendGrid, AWS 
 
 ## 6. Job Application Workflow
 
-CareerOS emphasizes a low-friction application process.
+Niyukti emphasizes a low-friction application process.
 Instead of redirecting users to another page, applications are completed using an interactive modal.
 
 ### Apply Modal
@@ -232,7 +232,7 @@ The architecture keeps business logic outside presentation components. This sepa
 
 ## 9. Route Protection
 
-CareerOS prevents unauthorized navigation using centralized route guards.
+Niyukti prevents unauthorized navigation using centralized route guards.
 The protection layer validates:
 *   Authentication status
 *   User role
@@ -269,7 +269,7 @@ Purpose-built empty states guide users when:
 
 ## 11. Error Handling
 
-CareerOS provides graceful recovery for unexpected situations.
+Niyukti provides graceful recovery for unexpected situations.
 Implemented states include:
 *   Custom 404 Page
 *   Invalid Route Handling

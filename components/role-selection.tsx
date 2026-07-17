@@ -19,7 +19,7 @@ export function RoleSelection() {
             <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-saffron-500 via-white to-indiaGreen-500" />
           </div>
           <span className="text-xl font-extrabold tracking-tight text-navy-950 font-heading">
-            CareerOS
+            Niyukti
           </span>
         </div>
 
@@ -31,7 +31,7 @@ export function RoleSelection() {
           </span>
         </h1>
         <p className="mt-5 text-stone-500 text-sm max-w-md mx-auto leading-relaxed">
-          Select your portal to configure your professional CareerOS workspace.
+          Select your portal to configure your professional Niyukti workspace.
         </p>
 
         {/* Roles Layout */}

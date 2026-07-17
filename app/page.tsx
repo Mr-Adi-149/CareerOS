@@ -149,12 +149,12 @@ function HomeContent() {
                C
                <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-saffron-500 via-white to-indiaGreen-500" />
              </div>
-             <span className="font-heading font-extrabold text-navy-950 text-base">CareerOS</span>
+             <span className="font-heading font-extrabold text-navy-950 text-base">Niyukti</span>
           </div>
           <p className="text-xs text-stone-500 max-w-sm text-center sm:text-left leading-relaxed">
             Built for ambitious professionals. All application workflow tracking data remains safely stored inside your local browser storage.
           </p>
-          <p className="text-xs font-bold text-stone-400 uppercase tracking-widest">© 2026 CareerOS</p>
+          <p className="text-xs font-bold text-stone-400 uppercase tracking-widest">© 2026 Niyukti</p>
         </div>
       </footer>
     </>

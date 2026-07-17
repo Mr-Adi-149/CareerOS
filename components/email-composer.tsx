@@ -176,7 +176,7 @@ export function EmailComposer({
                     Sending...
                   </>
                 ) : (
-                  'Send via CareerOS'
+                  'Send via Niyukti'
                 )}
               </button>
             </div>

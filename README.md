@@ -1,8 +1,8 @@
-# CareerOS
+# Niyukti
 
 A modern, frontend-first recruitment platform built to streamline the hiring experience for both candidates and recruiters. Designed with a focus on speed, user experience, and scalability. 
 
-CareerOS provides a seamless job discovery workflow, role-based user experiences, and a robust component architecture following modern Next.js development practices. It uses static mock data, so no complex database or environment variables are needed to get started.
+Niyukti provides a seamless job discovery workflow, role-based user experiences, and a robust component architecture following modern Next.js development practices. It uses static mock data, so no complex database or environment variables are needed to get started.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
