@@ -110,6 +110,7 @@ function ProfileCard() {
 
 function ApplicationDrawer({ application, close }: { application: Application; close: () => void }) {
   const { updateApplication, withdrawApplication, jobs, setFollowupReminder, logFollowupSent, profile } = useCareer();
+  const { user } = useAuth();
   const job = jobs.find((item) => item.id === application.jobId);
   
   const [isEmailOpen, setIsEmailOpen] = useState(false);
@@ -205,15 +206,21 @@ function ApplicationDrawer({ application, close }: { application: Application; c
             <label className="text-[9px] font-extrabold uppercase tracking-widest text-stone-400">
               Current stage
             </label>
-            <select
-              value={application.status}
-              onChange={(event) => updateApplication(application.id, event.target.value as ApplicationStatus)}
-              className="focus-ring mt-2 w-full rounded-xl border border-stone-200 bg-stone-50/50 px-3 py-2 text-xs font-bold text-navy-800 outline-none cursor-pointer"
-            >
-              {statuses.map((status) => (
-                <option key={status}>{status}</option>
-              ))}
-            </select>
+            {user?.role === 'recruiter' ? (
+              <select
+                value={application.status}
+                onChange={(event) => updateApplication(application.id, event.target.value as ApplicationStatus)}
+                className="focus-ring mt-2 w-full rounded-xl border border-stone-200 bg-stone-50/50 px-3 py-2 text-xs font-bold text-navy-800 outline-none cursor-pointer"
+              >
+                {statuses.map((status) => (
+                  <option key={status}>{status}</option>
+                ))}
+              </select>
+            ) : (
+              <div className="mt-2 w-full rounded-xl border border-stone-200 bg-stone-50 px-3 py-2 text-xs font-bold text-navy-800 opacity-80 cursor-not-allowed">
+                {application.status}
+              </div>
+            )}
           </div>
 
           {/* HR Contact Section */}
