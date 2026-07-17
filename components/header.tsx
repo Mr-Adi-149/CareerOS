@@ -13,7 +13,7 @@ export function Header() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const active = (path: string) => pathname === path ? 'border-b-2 border-saffron-500 text-navy-950 font-bold' : 'text-stone-500 hover:bg-stone-50/50 hover:text-navy-950';
-  const avatar = user?.username.slice(0, 1).toUpperCase() || 'C';
+  const avatar = user?.username.slice(0, 1).toUpperCase() || 'N';
 
   const signOut = () => {
     setMenuOpen(false);
@@ -26,7 +26,7 @@ export function Header() {
       <div className="shell flex h-[72px] items-center justify-between">
         <Link href={user?.role === 'recruiter' ? '/recruiter' : '/'} className="focus-ring group flex items-center gap-3 rounded-xl">
           <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-navy-900 to-navy-950 text-white shadow-premium transition-transform duration-300 group-hover:scale-[1.03]">
-            <span className="font-heading text-lg font-black">C</span><span className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-saffron-500 via-white to-indiaGreen-500" />
+            <span className="font-heading text-lg font-black">N</span><span className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-saffron-500 via-white to-indiaGreen-500" />
           </div>
           <div><p className="font-heading text-lg font-extrabold tracking-tight text-navy-950">Niyukti</p><p className="text-[9px] font-bold uppercase tracking-wider text-stone-400">Private career workspace</p></div>
         </Link>

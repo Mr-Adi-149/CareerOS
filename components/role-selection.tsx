@@ -15,7 +15,7 @@ export function RoleSelection() {
         {/* Brand Logo */}
         <div className="flex justify-center items-center gap-3 mb-10">
           <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-navy-900 to-navy-950 text-white shadow-premium">
-            <span className="font-heading text-lg font-extrabold">C</span>
+            <span className="font-heading text-lg font-extrabold">N</span>
             <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-saffron-500 via-white to-indiaGreen-500" />
           </div>
           <span className="text-xl font-extrabold tracking-tight text-navy-950 font-heading">

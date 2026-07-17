@@ -146,7 +146,7 @@ function HomeContent() {
         <div className="shell flex flex-col gap-6 py-12 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
              <div className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-navy-950 text-white font-extrabold text-sm">
-               C
+               N
                <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-saffron-500 via-white to-indiaGreen-500" />
              </div>
              <span className="font-heading font-extrabold text-navy-950 text-base">Niyukti</span>
